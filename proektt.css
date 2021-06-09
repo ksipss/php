@@ -1,9 +1,9 @@
 body {
-  margin: 0 auto;
+  margin: 0 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: #fff;
-  width: 80vw;
+  /* width: 80vw; */
   background-image: url(img/1498307643594e5c3baa5f68.33820439.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -23,6 +23,7 @@ body {
   padding: 0;
   /* border: 1px solid black; */
   background-color: rgba(210, 201, 216, 0.9);
+  width: 80vw;
   
 }
 .slider {
@@ -389,46 +390,7 @@ flex-wrap: wrap;
   display: flex;
   justify-content: center;
 background-repeat: no-repeat;
-
 }
-.service-part-card:nth-child(1){
-  background-image: url(img/news1.png);
-}
-.service-part-card:nth-child(2){
-  background-image: url(img/news2.png);
-}
-.service-part-card:nth-child(3){
-  background-image: url(img/news3.png);
-}
-.service-part-card:nth-child(4){
-  background-image: url(img/news4.png);
-}
-.service-part-card:nth-child(5){
-  background-image: url(img/news5.jpg);
-}
-.service-part-card:nth-child(6){
-  background-image: url(img/news6.png);
-}
-.service-part-card:nth-child(7){
-  background-image: url(img/news1.png);
-}
-.service-part-card:nth-child(8){
-  background-image: url(img/news2.png);
-}
-.service-part-card:nth-child(9){
-  background-image: url(img/news3.png);
-}
-.service-part-card:nth-child(10){
-  background-image: url(img/news4.png);
-}
-.service-part-card:nth-child(11){
-  background-image: url(img/news5.jpg);
-}
-.service-part-card:nth-child(12){
-  background-image: url(img/news6.png);
-}
-
-
 .service-part-card a {
   text-align: center;
 }
@@ -525,7 +487,7 @@ letter-spacing: 0.05em;
 }
 .about_us{
 width: 70vw;
-height: 100vw;
+/* height: 100vw; */
 background-color: rgba(204, 193, 212, 0.5);
 
 }
@@ -803,4 +765,22 @@ use :hover{
 }
 g a{
 color: white;
+fill: rgb(247, 240, 240);
+}
+.game_image{
+    /* background-image: url(img/news1.png); */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 50%;
+    min-height: 20vw;
+    max-height: 100%;
+    
+}
+.game_text{
+  width: 50%;
+  height: 100px;
+}
+.game_item{
+  margin-top: 9vw;
+  display: flex;
 }

@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games</title>
     <link rel="stylesheet" href="proektt.css">
+    <style>
+        .conteiner a text {
+            color: white !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -52,27 +57,24 @@
                     <a href="#"> <use xlink:href="#banner2" x="50" y="407" class="fourteenth"/> </a>
                      
                     <g font-size="9" fill="#F0F0F0">
-                         <text x="58" y="25" class="first"><a href="#">Hitman 3</a>
-                        
-                        </text> 
-                    <text x="53" y="40" class="first"><a href=""> 20 января 2021</a></text>
-
-                    <text x="182" y="15" class="second"><a href="#">Декабрь 2017</text> 
-                    <text x="186" y="30" class="second">Инвестиции</text>
-                    <text x="309" y="30" class="third">Январь 2018</text> 
-                    <text x="357" y="77" class="fourth">Февраль 2018</text>
-                    <text x="312" y="130" class="fifth">Март 2018</text>
-                    <text x="215" y="144" class="sixth">Апрель 2018</text>
-                    <text x="115" y="155" class="seventh">Май 2018</text> 
-                    <text x="60" y="215" class="eighth">Июнь 2018</text> 
-                    <text x="130" y="255" class="ninth">Июль 2018</text>
-                    <text x="208" y="270" class="tenth">Август 2018</text>
-                    <text x="281" y="280" class="eleventh">Сентябрь 2018</text> 
-                    <text x="350" y="330" class="twelfth">Октябрь 2018</text>
-                    <text x="225" y="365" class="thirteenth">Ноябрь 2018</text>
-                    <text x="201" y="385" class="thirteenth">Окончательный выбор </text>
-                    <text x="67" y="425" class="fourteenth">Декабрь 2018 </text>
-                    <text x="57" y="445" class="fourteenth">Финишные работы </text>
+                    <a href="#"> <text x="58" y="25" class="first">Hitman 3 </text></a>
+                    <a href="#"><text x="53" y="40" class="first"> 20 января 2021 </text></a>
+                    <a href="#"><text x="182" y="15" class="second"><a href="#">Декабрь 2017</text></a>
+                    <a href="#"><text x="186" y="30" class="second">Инвестиции</text></a>
+                    <a href="#"><text x="309" y="30" class="third">Январь 2018</text></a>
+                    <a href="#"><text x="357" y="77" class="fourth">Февраль 2018</text></a>
+                    <a href="#"><text x="312" y="130" class="fifth">Март 2018</text></a>
+                    <a href="#"><text x="215" y="144" class="sixth">Апрель 2018</text></a>
+                    <a href="#"><text x="115" y="155" class="seventh">Май 2018</text></a>
+                    <a href="#"><text x="60" y="215" class="eighth">Июнь 2018</text></a>
+                    <a href="#"><text x="130" y="255" class="ninth">Июль 2018</text></a>
+                    <a href="#"><text x="208" y="270" class="tenth">Август 2018</text></a>
+                    <a href="#"><text x="281" y="280" class="eleventh">Сентябрь 2018</text></a>
+                    <a href="#"><text x="350" y="330" class="twelfth">Октябрь 2018</text></a>
+                    <a href="#"><text x="225" y="365" class="thirteenth">Ноябрь 2018</text></a>
+                    <a href="#"><text x="201" y="385" class="thirteenth">Окончательный выбор </text></a>
+                    <a href="#"><text x="67" y="425" class="fourteenth">Декабрь 2018 </text></a>
+                    <a href="#"><text x="57" y="445" class="fourteenth">Финишные работы </text></a>
                     
                     
                     

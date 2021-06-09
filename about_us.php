@@ -1,3 +1,5 @@
+<?php require_once('./bdAboutUs.php'); ?>
+<?php require_once('./template.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,17 +24,11 @@
             <div class="about_us_text">
               <p>В реализации проекта принимали участие</p>
             </div>
-            <?php require_once('./about_uscard.php'); ?>
-            <?php foreach ($about_us as $about) : ?>
-            <div class="card_about_me">
-              <div class="about_me_avatar_1" style="background-image: <?php echo $about['avatar'] ?>">
-    
-              </div>
-              <div class="about_me_text">
-               <?php echo $about[text] ?>
-              </div>
-            </div>
-            <?php endforeach; ?>
+            <?php 
+                        foreach($aboutUs as $item) {
+                          echo template('./aboutUscard.php', $item);                         
+                        }
+                         ?>
             
           </div>
         </div>

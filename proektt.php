@@ -1,3 +1,8 @@
+<?php require_once('./newsData.php'); ?>
+<?php require_once('./bdNews.php'); ?>
+<?php require_once('./bdAboutUs.php'); ?>
+<?php require_once('./aboutUsData.php'); ?>
+<?php require_once('./template.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -135,19 +140,12 @@
         <h2>Новости</h2>
         <div class="news">
 
-        <?php require_once('./newscard.php'); ?>
-                        <?php foreach ($news as $new) : ?>
-                        <div class="service-part-card" style="background-image: <?php echo $new['background'] ?>">
-                            <div class="service-part-card-image">
-
-                                <h3>
-                                    <a href="#"><?php echo $new['name'] ?></a>
-                                </h3>
-                                <a href="#"> <span> <?php echo $new['text']  ?> </span> </a>
-                               
-                            </div>
-                        </div>
-                        <?php endforeach; ?>
+        <?php 
+                        foreach($news as $item) {
+                            // var_dump ($item);
+                          echo template('./newscard.php', $item);                         
+                        }
+                         ?>
         </div>
 
       </div>
@@ -160,17 +158,11 @@
             <div class="about_us_text">
               <p>В реализации проекта принимали участие</p>
             </div>
-            <?php require_once('./about_uscard.php'); ?>
-            <?php foreach ($about_us as $about) : ?>
-            <div class="card_about_me">
-              <div class="about_me_avatar_1" style="background-image: <?php echo $about['avatar'] ?>">
-    
-              </div>
-              <div class="about_me_text">
-               <?php echo $about[text] ?>
-              </div>
-            </div>
-            <?php endforeach; ?>
+            <?php 
+                        foreach($aboutUs as $item) {
+                          echo template('./aboutUscard.php', $item);                         
+                        }
+                         ?>
             
           </div>
         </div>

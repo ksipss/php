@@ -1,6 +1,6 @@
-                    <?php require_once('./newscard.php'); ?>
-                    <?php require_once('./function.php'); ?>
-                    <!DOCTYPE html>
+<?php require_once('./bdNews.php'); ?>
+<?php require_once('./template.php'); ?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -23,8 +23,9 @@
                 <div class="news">
 
                         <?php 
-                        foreach($newsData as $news) {
-                          echo template('./card.php', $news);                         
+                        foreach($news as $item) {
+                            // var_dump ($item);
+                          echo template('./newscard.php', $item);                         
                         }
                          ?>
                       
