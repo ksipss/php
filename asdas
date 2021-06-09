@@ -1,0 +1,31 @@
+ // echo $intArray[$i] . '; ';
+
+    // echo $intArray[$i] ** 2 . '; ';
+
+      if (($intArray[$i] % 5) == 0){
+        echo $intArray[$i] . '; ';
+    };
+};
+
+$sum = 0;
+$sum += $intArray[$i];
+    echo $sum . '; ';
+
+$sum = 0;
+$sum = $sum + $intArray[$i];
+};
+echo $sum;
+
+$sum = 0;
+for ($i = 0; $i < (count($intArray) / 3); $i++){
+$sum += $intArray[$i];
+}
+echo $sum;
+
+$sum = 0;
+    $sum = $intArray[$i] * $i ;
+    echo $sum . '☺';
+};
+
+ echo strval($intArray[$i]);
+}
