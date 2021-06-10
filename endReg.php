@@ -1,3 +1,4 @@
+<?php require_once('./password.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,15 +15,17 @@
     </form>
     
     <?php 
-    $link = mysqli_connect("localhost", "root", "root", "vaspi", "3307");
+    $link = mysqli_connect("localhost", "root", "root", "vaspi", "3306");
     
     if(!empty($_POST)){
         $data = $_POST;
         $data['login'] = mysqli_real_escape_string($link, $_POST['login']);
+        $data['email'] = mysqli_real_escape_string($link, $_POST['email']);
+        // $data['password'] = mysqli_real_escape_string($link, $_POST['password']);
         $data['password'] = md5($data['password'] . 'UUUUJFSDfaesuijksdvn');
         
-        $sql = 'INSERT INTO `reg` (`login`, `password`) VALUES (\'%s\', \'%s\')';
-        $sql = sprintf($sql, $data['login'], $data['password']);
+        $sql = 'INSERT INTO `reg` (`login`,`email`, `password`) VALUES (\'%s\', \'%s\', \'%s\')';
+        $sql = sprintf($sql, $data['login'], $data['email'], $data['password']);
         // $result = mysqli_query($link, $sql);
         if(mysqli_query($link, $sql)
         {
@@ -30,7 +33,7 @@
         });
     };
     
-    var_dump ($sql);
+    // var_dump ($sql);
     
     ?>
      

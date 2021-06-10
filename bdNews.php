@@ -1,5 +1,5 @@
 <?php 
-    $link = mysqli_connect("localhost", "root", "root", "Vaspi", "3307");
+    $link = mysqli_connect("localhost", "root", "root", "Vaspi", "3306");
 
     $query = "SELECT * FROM news";
     $stmt = mysqli_stmt_init($link);

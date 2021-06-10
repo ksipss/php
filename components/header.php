@@ -31,7 +31,7 @@
         <div class="svg">
           <img src="img/loupe.svg">
         </div>
-        <a href="./reg.php">
+        <a href="./login.php">
           <div class="sign-in">
 
             <div class="svg">
